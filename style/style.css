@@ -81,7 +81,7 @@ nav a#openup {
     border-bottom: 1px solid #555;
   }
   nav a:hover {
-    background: #444;
+    background: #e8e8e8;
   }
   nav a#openup:after {
     content: '|||';
@@ -99,7 +99,7 @@ nav a#openup {
   }
   nav a#openup {
     display: block;
-    background-color: #333;
+    background-color: #fff;
     width: 100%;
     position: relative;
   }
