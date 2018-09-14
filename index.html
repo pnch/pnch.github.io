@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="stylesheet" href="./style/style.css">
+  <title>Welcome to myTunes</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class='cf'>
+      <ul class='cf'>
+        <li class="hide-on-small">
+          <a href="#">1st link</a>
+        </li>
+        <li>
+          <a href='#'>2nd link</a>
+        </li>
+        <li>
+          <a href='#'>3rd link</a>
+        </li>
+        <li>
+          <a href='#'>4th link</a>
+        </li>
+        <li>
+          <a href='#'>5th hlink</a>
+        </li>
+      </ul>
+      <a href='#' id='openup'>6th link</a>
+    </nav>
+  </header>
+  <main class="main">
+    <div class="table-container">
+      <table class="table w3-table-all" id="myTable">
+        <thead>
+          <tr >
+            <th onclick="w3.sortHTML('#myTable', '.item', 'td:nth-child(1)')">Coin</th>
+            <th onclick="w3.sortHTML('#myTable', '.item', 'td:nth-child(2)')">Pool rate</th>
+            <th onclick="w3.sortHTML('#myTable', '.item', 'td:nth-child(3)')">Network rate</th>
+            <th onclick="w3.sortHTML('#myTable', '.item', 'td:nth-child(4)')">Miner</th>
+            <th onclick="w3.sortHTML('#myTable', '.item', 'td:nth-child(5)')">Price</th>
+            <th onclick="w3.sortHTML('#myTable', '.item', 'td:nth-child(6)')">Address</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="item">
+            <td>Hello</td>
+            <td>Space</td>
+            <td>1</td>
+            <td>Hello</td>
+            <td>Hello</td>
+            
+            <td><a href="#">Sample text</a></td>
+
+          </tr>
+          <tr class="item">
+              <td>World</td>
+              <td>Are</td>
+              <td>2</td>
+              <td>World</td>
+              <td>World</td>
+              
+              <td><a href="#">Sample text</a></td>
+
+          </tr>
+          <tr class="item">
+              <td>You </td>
+              <td>Wide </td>
+              <td>3 </td>
+              <td>You </td>
+              <td>You </td>
+            
+              <td><a href="#">Sample text</a></td>
+
+          </tr>
+          <tr class="item">
+              <td>Are</td>
+              <td>And</td>
+              <td>4</td>
+              <td>Are</td>
+              <td>Are</td>
+              
+              <td><a href="#">Sample text</a></td>
+
+          </tr>
+          <tr class="item">
+              <td>Amazing</td>
+              <td>Deep</td>
+              <td>5</td>
+              <td>Amazing</td>
+              <td>Amazing</td>
+              <td><a href="#">Sample text</a></td>
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
