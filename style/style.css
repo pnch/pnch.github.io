@@ -85,9 +85,7 @@ li.dropdown {
   display: block;
 }
 
-@media screen and (max-width: 580px) {
- 
-}
+
 
 
 /* table */
@@ -135,5 +133,17 @@ tr a:link, tr a:visited {
   .table-container{
     width: 100%;
 
+  }
+}
+@media screen and (max-width: 380px) {
+  body {
+        
+  }
+  .table-container{
+   width: 90%;
+   margin: 0;
+  }
+  li a, .dropbtn {
+  padding: 8px 10px;
   }
 }
