@@ -1,5 +1,4 @@
-/* W3.JS 1.03 December 2017 by w3schools.com */
-"use strict";
+
 var w3 = {};
 w3.hide = function (sel) {
   w3.hideElements(w3.getElements(sel));
@@ -396,3 +395,17 @@ w3.displayObject = function (id, data) {
     a.innerHTML = a.innerHTML.replace(r, result);
   }
 };
+// function sliceTable(largeTable, chunk) {
+//   let lesserTables = [];
+//   largeTable = lesserTables.slice.call(largeTable.children[0].children);
+//   for (let t = 0, len = largeTable.length, table; t < len; t += chunk) {
+//     table = document.createElement('table');
+//     largeTable
+//       .slice(t, t+chunk)
+//       .map(tr => table.appendChild(tr));
+//     lesserTables.push(table);
+//   }
+//   return lesserTables;
+// }
+
+// var tablesArray = sliceTable( document.getElementById( 'myTable' ), 10 );
