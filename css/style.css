@@ -1,0 +1,221 @@
+.header {
+  position: relative;
+  height: 40px; }
+  .header:after {
+    bottom: -5px;
+    box-shadow: inset 0px 4px 8px -3px rgba(17, 17, 17, 0.06);
+    content: "";
+    height: 5px;
+    left: 0px;
+    opacity: 1;
+    pointer-events: none;
+    position: absolute;
+    right: 0px;
+    width: 100%;
+    z-index: 2050; }
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: #e8e8e8;
+  font-size: 36px; }
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  padding: 15px; }
+
+.footer-text {
+  font-size: 14px; }
+
+.footer-colum__text {
+  text-align: center; }
+
+.footer-column a {
+  text-decoration: none;
+  text-align: center; }
+
+.footer-colum__text .social-tg:hover {
+  color: #28A0D4; }
+
+.social-tw:hover {
+  color: #1DA1F2; }
+
+.social-ds:hover {
+  color: #7289DA; }
+
+.social {
+  color: #333; }
+
+.fa {
+  font-size: 36px; }
+
+@media screen and (max-width: 720px) {
+  .table-container {
+    width: 100%; } }
+
+@media screen and (max-width: 380px) {
+  .table-container {
+    width: 90%;
+    margin: 0; }
+  li a, .dropbtn {
+    padding: 8px 10px; } }
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  background-color: #FAFAFA;
+  margin: 0;
+  color: #111111;
+  line-height: 1.6;
+  height: 100%; }
+
+/* Navigation */
+.main-container {
+  min-height: calc(100vh - 120px); }
+
+.main-home {
+  margin-top: 100px; }
+
+ul {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center; }
+
+li a, .dropbtn {
+  display: inline-block;
+  color: #333;
+  text-align: center;
+  padding: 8px 30px;
+  text-decoration: none; }
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #e8e8e8; }
+
+li.dropdown {
+  display: inline-block; }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(17, 17, 17, 0.2);
+  z-index: 1; }
+
+.dropdown-content a {
+  color: #111111;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left; }
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1; }
+
+.dropdown:hover .dropdown-content {
+  display: block; }
+
+/* table */
+.table-container {
+  width: 80%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border-left: 2px solid #e8e8e8;
+  border-top: none;
+  border-right: 1px solid #e8e8e8;
+  border-bottom: 4px solid #e8e8e8;
+  border-radius: 3px; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%; }
+
+th, td {
+  text-align: center;
+  padding: 16px; }
+
+th:first-child, td:first-child {
+  text-align: left; }
+
+thead {
+  background-color: #e8e8e8; }
+
+thead tr {
+  cursor: pointer; }
+
+tr:hover {
+  background-color: #e8e8e8; }
+
+tr a:link, tr a:visited {
+  text-decoration: none;
+  color: #158CBA; }
+
+.col-rate {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px; }
+  .col-rate__col {
+    border-left: 2px solid #e8e8e8;
+    border-top: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+    border-bottom: 4px solid #e8e8e8;
+    border-radius: 3px;
+    padding: 10px; }
+    .col-rate__col:not(:last-child) {
+      margin-bottom: 25px; }
+
+.col-info {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 25px; }
+  .col-info__row {
+    border-left: 2px solid #e8e8e8;
+    border-top: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+    border-bottom: 4px solid #e8e8e8;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 5px; }
+
+.chart {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-left: 2px solid #e8e8e8;
+  border-top: 1px solid #e8e8e8;
+  border-right: 1px solid #e8e8e8;
+  border-bottom: 4px solid #e8e8e8;
+  border-radius: 3px;
+  padding: 10px;
+  padding-top: 50px;
+  box-sizing: border-box; }
+  .chart__workers {
+    position: absolute;
+    top: -50;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -200px;
+    background-color: red; }
+  .chart__payments {
+    position: absolute; }
