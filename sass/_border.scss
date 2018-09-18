@@ -1,0 +1,13 @@
+.table-container,
+.chart-container,
+.setting,
+.col-rate__col,
+.col-info__row,
+.chart-container__info-workers,
+.chart-container__info-payments {
+  border-left: 2px solid $color-grey-primary;
+  border-right: 1px solid $color-grey-primary;
+  border-top: 1px solid $color-grey-primary;
+  border-bottom: 4px solid $color-grey-primary;
+  border-radius: 3px;
+}
