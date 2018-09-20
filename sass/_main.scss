@@ -154,7 +154,9 @@ tr a:visited {
   margin-bottom: 25px;
   &__row {
     padding: 10px;
-    margin: 5px;
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
     &--1 {
     }
     &--2 {

@@ -231,8 +231,9 @@ tr a:visited {
 .col-info {
   margin-bottom: 25px; }
   .col-info__row {
-    padding: 10px;
-    margin: 5px; }
+    padding: 10px; }
+    .col-info__row:not(:last-child) {
+      margin-right: 5px; }
 
 .setting {
   margin-bottom: 25px;
