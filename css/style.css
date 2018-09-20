@@ -96,6 +96,9 @@
   border-bottom: 4px solid #e8e8e8;
   border-radius: 3px; }
 
+.tab-wrapper {
+  border: 1px solid #e8e8e8; }
+
 body {
   font-family: "PT Sans", sans-serif;
   background-color: #fafafa;
@@ -112,7 +115,7 @@ body {
 .main-home {
   margin-top: 100px; }
 
-ul {
+.menu {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -161,7 +164,7 @@ li.dropdown {
   display: block; }
 
 .container-row {
-  width: 80%;
+  width: 70%;
   margin: 0 auto; }
 
 /* table */
@@ -170,10 +173,17 @@ li.dropdown {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   box-sizing: border-box;
   border-top: none; }
+
+.tab-table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #e8e8e8; }
 
 .table {
   border-collapse: collapse;
@@ -203,11 +213,18 @@ tr a:visited {
   text-decoration: none;
   color: #158cba; }
 
+.table-about {
+  font-size: 12px; }
+
+.table-about th,
+.table-about td {
+  padding: 12px 2px; }
+
 .col-rate {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   margin-top: 20px; }
   .col-rate__col {
@@ -215,33 +232,20 @@ tr a:visited {
     margin-bottom: 25px; }
 
 .col-info {
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
   margin-bottom: 25px; }
   .col-info__row {
     padding: 10px;
     margin: 5px; }
 
-.chart-container,
 .setting {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
   margin-bottom: 25px;
   padding: 10px; }
-  .chart-container__info,
-  .setting__info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px; }
-    .chart-container__info-workers,
-    .setting__info-workers {
-      width: 40%; }
-    .chart-container__info-payments,
-    .setting__info-payments {
-      width: 40%; }
 
 .pager {
   height: 60px;
@@ -261,3 +265,67 @@ tr a:visited {
   background-color: #333;
   color: white;
   border: 1px solid #333; }
+
+.tab,
+.tab-2 {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: row; }
+
+/* Style the buttons inside the tab */
+.tab button,
+.tab-2 button {
+  width: 50%;
+  margin: 0 auto;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px; }
+
+.tab .current {
+  background-color: #ccc; }
+
+/* Change background color of buttons on hover */
+.tab button:hover,
+.tab-2 button:hover {
+  background-color: #ddd; }
+
+/* Create an active/current tablink class */
+.tab button.active,
+.tab-2 button.active {
+  background-color: #ccc; }
+
+.tab-2 button .currentColor {
+  background-color: #ccc; }
+
+/* Style the tab content */
+.tabcontent,
+.tabcontent-2 {
+  display: none;
+  padding: 10px 0;
+  border-top: none; }
+
+.chart-container {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  padding: 10px; }
+  .chart-container__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px; }
+
+.tab-wrapper {
+  width: 49%; }
+
+.current {
+  display: block; }
+
+#current {
+  background: #ccc; }

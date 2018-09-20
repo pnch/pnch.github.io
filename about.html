@@ -18,7 +18,7 @@
     <div class="main-container">
         <header class="header">
             <nav>
-                <ul>
+                <ul class="menu">
                     <li>
                         <a href="index.html">Home</a>
                     </li>
@@ -96,16 +96,627 @@
             </div>
             <div class="chart-container ">
                 <div class="chart-container__info">
-                    <div class="chart-container__info chart-container__info-workers">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem consectetur cumque alias magnam assumenda, id soluta tenetur
-                        laboriosam laborum, neque, error voluptate vitae sed aut perferendis tempore eligendi iure provident.
+                    <div class="tab-wrapper">
+                        <div class="tab">
+                            <button class="tablinks active" onclick="openCity(event, 'Info')">Info</button>
+                            <button class="tablinks" onclick="openCity(event, 'Table')">Table</button>
+
+                        </div>
+
+                        <div id="Info" class="tabcontent current">
+                            <h3>Info</h3>
+                            <p>Info is the capital city of England.</p>
+                        </div>
+
+                        <div id="Table" class="tabcontent">
+                            <h3>Table</h3>
+                            <div class="tab-table-container">
+                                <table class="table paginated table-about" id="example">
+                                    <thead>
+                                        <tr>
+                                            <th>Txid</th>
+                                            <th>Amount</th>
+                                            <th>Date</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        <tr>
+                                            <td>aeb1822464406c011c76cacc995c1537e37432f093e62de60fb9d27cba2ff176</td>
+                                            <td>3.12144493 </td>
+                                            <td>2018-09-19 21:14:49</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ce6507949d4e0281dcd1351a0d54658aaf16eb8d3348ae8e83848855c93609be</td>
+                                            <td>3.34842983 </td>
+                                            <td>2018-09-19 21:27:50</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>dbbc5e9d44bb8cb4f819647400146840999ccca20ef2a23f07c5b1bdb4c6b879</td>
+                                            <td>1.52954408</td>
+                                            <td>2018-09-19 21:37:20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>748421b7b6219aaea34e96222261038b8001465c6524d0514e6a381893a7f80e</td>
+                                            <td>1.39544321</td>
+                                            <td>2018-09-19 21:59:29</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ef49717ceda0b5ff35201e864d1fdf115bb0b40234843dec49c0a8359b379a3a</td>
+                                            <td>1.17016755</td>
+                                            <td>2018-09-19 22:31:03</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>aeb1822464406c011c76cacc995c1537e37432f093e62de60fb9d27cba2ff176</td>
+                                            <td>3.12144493 </td>
+                                            <td>2018-09-19 21:14:49</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ce6507949d4e0281dcd1351a0d54658aaf16eb8d3348ae8e83848855c93609be</td>
+                                            <td>3.34842983 </td>
+                                            <td>2018-09-19 21:27:50</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>dbbc5e9d44bb8cb4f819647400146840999ccca20ef2a23f07c5b1bdb4c6b879</td>
+                                            <td>1.52954408</td>
+                                            <td>2018-09-19 21:37:20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>748421b7b6219aaea34e96222261038b8001465c6524d0514e6a381893a7f80e</td>
+                                            <td>1.39544321</td>
+                                            <td>2018-09-19 21:59:29</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ef49717ceda0b5ff35201e864d1fdf115bb0b40234843dec49c0a8359b379a3a</td>
+                                            <td>1.17016755</td>
+                                            <td>2018-09-19 22:31:03</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>aeb1822464406c011c76cacc995c1537e37432f093e62de60fb9d27cba2ff176</td>
+                                            <td>3.12144493 </td>
+                                            <td>2018-09-19 21:14:49</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ce6507949d4e0281dcd1351a0d54658aaf16eb8d3348ae8e83848855c93609be</td>
+                                            <td>3.34842983 </td>
+                                            <td>2018-09-19 21:27:50</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>dbbc5e9d44bb8cb4f819647400146840999ccca20ef2a23f07c5b1bdb4c6b879</td>
+                                            <td>1.52954408</td>
+                                            <td>2018-09-19 21:37:20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>748421b7b6219aaea34e96222261038b8001465c6524d0514e6a381893a7f80e</td>
+                                            <td>1.39544321</td>
+                                            <td>2018-09-19 21:59:29</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ef49717ceda0b5ff35201e864d1fdf115bb0b40234843dec49c0a8359b379a3a</td>
+                                            <td>1.17016755</td>
+                                            <td>2018-09-19 22:31:03</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>aeb1822464406c011c76cacc995c1537e37432f093e62de60fb9d27cba2ff176</td>
+                                            <td>3.12144493 </td>
+                                            <td>2018-09-19 21:14:49</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ce6507949d4e0281dcd1351a0d54658aaf16eb8d3348ae8e83848855c93609be</td>
+                                            <td>3.34842983 </td>
+                                            <td>2018-09-19 21:27:50</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>dbbc5e9d44bb8cb4f819647400146840999ccca20ef2a23f07c5b1bdb4c6b879</td>
+                                            <td>1.52954408</td>
+                                            <td>2018-09-19 21:37:20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>748421b7b6219aaea34e96222261038b8001465c6524d0514e6a381893a7f80e</td>
+                                            <td>1.39544321</td>
+                                            <td>2018-09-19 21:59:29</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ef49717ceda0b5ff35201e864d1fdf115bb0b40234843dec49c0a8359b379a3a</td>
+                                            <td>1.17016755</td>
+                                            <td>2018-09-19 22:31:03</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>aeb1822464406c011c76cacc995c1537e37432f093e62de60fb9d27cba2ff176</td>
+                                            <td>3.12144493 </td>
+                                            <td>2018-09-19 21:14:49</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ce6507949d4e0281dcd1351a0d54658aaf16eb8d3348ae8e83848855c93609be</td>
+                                            <td>3.34842983 </td>
+                                            <td>2018-09-19 21:27:50</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>dbbc5e9d44bb8cb4f819647400146840999ccca20ef2a23f07c5b1bdb4c6b879</td>
+                                            <td>1.52954408</td>
+                                            <td>2018-09-19 21:37:20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>748421b7b6219aaea34e96222261038b8001465c6524d0514e6a381893a7f80e</td>
+                                            <td>1.39544321</td>
+                                            <td>2018-09-19 21:59:29</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ef49717ceda0b5ff35201e864d1fdf115bb0b40234843dec49c0a8359b379a3a</td>
+                                            <td>1.17016755</td>
+                                            <td>2018-09-19 22:31:03</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>aeb1822464406c011c76cacc995c1537e37432f093e62de60fb9d27cba2ff176</td>
+                                            <td>3.12144493 </td>
+                                            <td>2018-09-19 21:14:49</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ce6507949d4e0281dcd1351a0d54658aaf16eb8d3348ae8e83848855c93609be</td>
+                                            <td>3.34842983 </td>
+                                            <td>2018-09-19 21:27:50</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>dbbc5e9d44bb8cb4f819647400146840999ccca20ef2a23f07c5b1bdb4c6b879</td>
+                                            <td>1.52954408</td>
+                                            <td>2018-09-19 21:37:20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>748421b7b6219aaea34e96222261038b8001465c6524d0514e6a381893a7f80e</td>
+                                            <td>1.39544321</td>
+                                            <td>2018-09-19 21:59:29</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ef49717ceda0b5ff35201e864d1fdf115bb0b40234843dec49c0a8359b379a3a</td>
+                                            <td>1.17016755</td>
+                                            <td>2018-09-19 22:31:03</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>aeb1822464406c011c76cacc995c1537e37432f093e62de60fb9d27cba2ff176</td>
+                                            <td>3.12144493 </td>
+                                            <td>2018-09-19 21:14:49</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ce6507949d4e0281dcd1351a0d54658aaf16eb8d3348ae8e83848855c93609be</td>
+                                            <td>3.34842983 </td>
+                                            <td>2018-09-19 21:27:50</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>dbbc5e9d44bb8cb4f819647400146840999ccca20ef2a23f07c5b1bdb4c6b879</td>
+                                            <td>1.52954408</td>
+                                            <td>2018-09-19 21:37:20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>748421b7b6219aaea34e96222261038b8001465c6524d0514e6a381893a7f80e</td>
+                                            <td>1.39544321</td>
+                                            <td>2018-09-19 21:59:29</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ef49717ceda0b5ff35201e864d1fdf115bb0b40234843dec49c0a8359b379a3a</td>
+                                            <td>1.17016755</td>
+                                            <td>2018-09-19 22:31:03</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>aeb1822464406c011c76cacc995c1537e37432f093e62de60fb9d27cba2ff176</td>
+                                            <td>3.12144493 </td>
+                                            <td>2018-09-19 21:14:49</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ce6507949d4e0281dcd1351a0d54658aaf16eb8d3348ae8e83848855c93609be</td>
+                                            <td>3.34842983 </td>
+                                            <td>2018-09-19 21:27:50</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>dbbc5e9d44bb8cb4f819647400146840999ccca20ef2a23f07c5b1bdb4c6b879</td>
+                                            <td>1.52954408</td>
+                                            <td>2018-09-19 21:37:20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>748421b7b6219aaea34e96222261038b8001465c6524d0514e6a381893a7f80e</td>
+                                            <td>1.39544321</td>
+                                            <td>2018-09-19 21:59:29</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ef49717ceda0b5ff35201e864d1fdf115bb0b40234843dec49c0a8359b379a3a</td>
+                                            <td>1.17016755</td>
+                                            <td>2018-09-19 22:31:03</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>aeb1822464406c011c76cacc995c1537e37432f093e62de60fb9d27cba2ff176</td>
+                                            <td>3.12144493 </td>
+                                            <td>2018-09-19 21:14:49</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ce6507949d4e0281dcd1351a0d54658aaf16eb8d3348ae8e83848855c93609be</td>
+                                            <td>3.34842983 </td>
+                                            <td>2018-09-19 21:27:50</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>dbbc5e9d44bb8cb4f819647400146840999ccca20ef2a23f07c5b1bdb4c6b879</td>
+                                            <td>1.52954408</td>
+                                            <td>2018-09-19 21:37:20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>748421b7b6219aaea34e96222261038b8001465c6524d0514e6a381893a7f80e</td>
+                                            <td>1.39544321</td>
+                                            <td>2018-09-19 21:59:29</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ef49717ceda0b5ff35201e864d1fdf115bb0b40234843dec49c0a8359b379a3a</td>
+                                            <td>1.17016755</td>
+                                            <td>2018-09-19 22:31:03</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>aeb1822464406c011c76cacc995c1537e37432f093e62de60fb9d27cba2ff176</td>
+                                            <td>3.12144493 </td>
+                                            <td>2018-09-19 21:14:49</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ce6507949d4e0281dcd1351a0d54658aaf16eb8d3348ae8e83848855c93609be</td>
+                                            <td>3.34842983 </td>
+                                            <td>2018-09-19 21:27:50</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>dbbc5e9d44bb8cb4f819647400146840999ccca20ef2a23f07c5b1bdb4c6b879</td>
+                                            <td>1.52954408</td>
+                                            <td>2018-09-19 21:37:20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>748421b7b6219aaea34e96222261038b8001465c6524d0514e6a381893a7f80e</td>
+                                            <td>1.39544321</td>
+                                            <td>2018-09-19 21:59:29</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ef49717ceda0b5ff35201e864d1fdf115bb0b40234843dec49c0a8359b379a3a</td>
+                                            <td>1.17016755</td>
+                                            <td>2018-09-19 22:31:03</td>
+
+                                        </tr>
+
+                                </table>
+
+
+
+
+                                </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
-                    <div class="chart-container__info chart-container__info-payments ">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum placeat dolorem exercitationem id eos saepe at quaerat,
-                        enim culpa modi minus recusandae nobis sequi vel? Quaerat aliquid aut soluta assumenda!
+                    <div class="tab-wrapper">
+                        <div class="tab-2">
+                            <button class="tablinks-2 active" onclick="openCity2(event, 'Info-2')">Info</button>
+                            <button class="tablinks-2" onclick="openCity2(event, 'Table-2')">Table</button>
+
+                        </div>
+
+                        <div id="Info-2" class="tabcontent-2 current">
+                            <h3>Info</h3>
+                            <p>Info is the capital city of England.</p>
+                        </div>
+
+                        <div id="Table-2" class="tabcontent-2">
+                            <h3>Table</h3>
+                            <div class="tab-table-container">
+                                <table class="table paginated table-about" id="example">
+                                    <thead>
+                                        <tr>
+                                            <th>Txid</th>
+                                            <th>Amount</th>
+                                            <th>Date</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        <tr>
+                                            <td>aeb1822464406c011c76cacc995c1537e37432f093e62de60fb9d27cba2ff176</td>
+                                            <td>3.12144493 </td>
+                                            <td>2018-09-19 21:14:49</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ce6507949d4e0281dcd1351a0d54658aaf16eb8d3348ae8e83848855c93609be</td>
+                                            <td>3.34842983 </td>
+                                            <td>2018-09-19 21:27:50</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>dbbc5e9d44bb8cb4f819647400146840999ccca20ef2a23f07c5b1bdb4c6b879</td>
+                                            <td>1.52954408</td>
+                                            <td>2018-09-19 21:37:20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>748421b7b6219aaea34e96222261038b8001465c6524d0514e6a381893a7f80e</td>
+                                            <td>1.39544321</td>
+                                            <td>2018-09-19 21:59:29</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ef49717ceda0b5ff35201e864d1fdf115bb0b40234843dec49c0a8359b379a3a</td>
+                                            <td>1.17016755</td>
+                                            <td>2018-09-19 22:31:03</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>aeb1822464406c011c76cacc995c1537e37432f093e62de60fb9d27cba2ff176</td>
+                                            <td>3.12144493 </td>
+                                            <td>2018-09-19 21:14:49</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ce6507949d4e0281dcd1351a0d54658aaf16eb8d3348ae8e83848855c93609be</td>
+                                            <td>3.34842983 </td>
+                                            <td>2018-09-19 21:27:50</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>dbbc5e9d44bb8cb4f819647400146840999ccca20ef2a23f07c5b1bdb4c6b879</td>
+                                            <td>1.52954408</td>
+                                            <td>2018-09-19 21:37:20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>748421b7b6219aaea34e96222261038b8001465c6524d0514e6a381893a7f80e</td>
+                                            <td>1.39544321</td>
+                                            <td>2018-09-19 21:59:29</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ef49717ceda0b5ff35201e864d1fdf115bb0b40234843dec49c0a8359b379a3a</td>
+                                            <td>1.17016755</td>
+                                            <td>2018-09-19 22:31:03</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>aeb1822464406c011c76cacc995c1537e37432f093e62de60fb9d27cba2ff176</td>
+                                            <td>3.12144493 </td>
+                                            <td>2018-09-19 21:14:49</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ce6507949d4e0281dcd1351a0d54658aaf16eb8d3348ae8e83848855c93609be</td>
+                                            <td>3.34842983 </td>
+                                            <td>2018-09-19 21:27:50</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>dbbc5e9d44bb8cb4f819647400146840999ccca20ef2a23f07c5b1bdb4c6b879</td>
+                                            <td>1.52954408</td>
+                                            <td>2018-09-19 21:37:20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>748421b7b6219aaea34e96222261038b8001465c6524d0514e6a381893a7f80e</td>
+                                            <td>1.39544321</td>
+                                            <td>2018-09-19 21:59:29</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ef49717ceda0b5ff35201e864d1fdf115bb0b40234843dec49c0a8359b379a3a</td>
+                                            <td>1.17016755</td>
+                                            <td>2018-09-19 22:31:03</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>aeb1822464406c011c76cacc995c1537e37432f093e62de60fb9d27cba2ff176</td>
+                                            <td>3.12144493 </td>
+                                            <td>2018-09-19 21:14:49</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ce6507949d4e0281dcd1351a0d54658aaf16eb8d3348ae8e83848855c93609be</td>
+                                            <td>3.34842983 </td>
+                                            <td>2018-09-19 21:27:50</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>dbbc5e9d44bb8cb4f819647400146840999ccca20ef2a23f07c5b1bdb4c6b879</td>
+                                            <td>1.52954408</td>
+                                            <td>2018-09-19 21:37:20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>748421b7b6219aaea34e96222261038b8001465c6524d0514e6a381893a7f80e</td>
+                                            <td>1.39544321</td>
+                                            <td>2018-09-19 21:59:29</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ef49717ceda0b5ff35201e864d1fdf115bb0b40234843dec49c0a8359b379a3a</td>
+                                            <td>1.17016755</td>
+                                            <td>2018-09-19 22:31:03</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>aeb1822464406c011c76cacc995c1537e37432f093e62de60fb9d27cba2ff176</td>
+                                            <td>3.12144493 </td>
+                                            <td>2018-09-19 21:14:49</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ce6507949d4e0281dcd1351a0d54658aaf16eb8d3348ae8e83848855c93609be</td>
+                                            <td>3.34842983 </td>
+                                            <td>2018-09-19 21:27:50</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>dbbc5e9d44bb8cb4f819647400146840999ccca20ef2a23f07c5b1bdb4c6b879</td>
+                                            <td>1.52954408</td>
+                                            <td>2018-09-19 21:37:20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>748421b7b6219aaea34e96222261038b8001465c6524d0514e6a381893a7f80e</td>
+                                            <td>1.39544321</td>
+                                            <td>2018-09-19 21:59:29</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ef49717ceda0b5ff35201e864d1fdf115bb0b40234843dec49c0a8359b379a3a</td>
+                                            <td>1.17016755</td>
+                                            <td>2018-09-19 22:31:03</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>aeb1822464406c011c76cacc995c1537e37432f093e62de60fb9d27cba2ff176</td>
+                                            <td>3.12144493 </td>
+                                            <td>2018-09-19 21:14:49</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ce6507949d4e0281dcd1351a0d54658aaf16eb8d3348ae8e83848855c93609be</td>
+                                            <td>3.34842983 </td>
+                                            <td>2018-09-19 21:27:50</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>dbbc5e9d44bb8cb4f819647400146840999ccca20ef2a23f07c5b1bdb4c6b879</td>
+                                            <td>1.52954408</td>
+                                            <td>2018-09-19 21:37:20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>748421b7b6219aaea34e96222261038b8001465c6524d0514e6a381893a7f80e</td>
+                                            <td>1.39544321</td>
+                                            <td>2018-09-19 21:59:29</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ef49717ceda0b5ff35201e864d1fdf115bb0b40234843dec49c0a8359b379a3a</td>
+                                            <td>1.17016755</td>
+                                            <td>2018-09-19 22:31:03</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>aeb1822464406c011c76cacc995c1537e37432f093e62de60fb9d27cba2ff176</td>
+                                            <td>3.12144493 </td>
+                                            <td>2018-09-19 21:14:49</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ce6507949d4e0281dcd1351a0d54658aaf16eb8d3348ae8e83848855c93609be</td>
+                                            <td>3.34842983 </td>
+                                            <td>2018-09-19 21:27:50</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>dbbc5e9d44bb8cb4f819647400146840999ccca20ef2a23f07c5b1bdb4c6b879</td>
+                                            <td>1.52954408</td>
+                                            <td>2018-09-19 21:37:20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>748421b7b6219aaea34e96222261038b8001465c6524d0514e6a381893a7f80e</td>
+                                            <td>1.39544321</td>
+                                            <td>2018-09-19 21:59:29</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ef49717ceda0b5ff35201e864d1fdf115bb0b40234843dec49c0a8359b379a3a</td>
+                                            <td>1.17016755</td>
+                                            <td>2018-09-19 22:31:03</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>aeb1822464406c011c76cacc995c1537e37432f093e62de60fb9d27cba2ff176</td>
+                                            <td>3.12144493 </td>
+                                            <td>2018-09-19 21:14:49</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ce6507949d4e0281dcd1351a0d54658aaf16eb8d3348ae8e83848855c93609be</td>
+                                            <td>3.34842983 </td>
+                                            <td>2018-09-19 21:27:50</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>dbbc5e9d44bb8cb4f819647400146840999ccca20ef2a23f07c5b1bdb4c6b879</td>
+                                            <td>1.52954408</td>
+                                            <td>2018-09-19 21:37:20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>748421b7b6219aaea34e96222261038b8001465c6524d0514e6a381893a7f80e</td>
+                                            <td>1.39544321</td>
+                                            <td>2018-09-19 21:59:29</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ef49717ceda0b5ff35201e864d1fdf115bb0b40234843dec49c0a8359b379a3a</td>
+                                            <td>1.17016755</td>
+                                            <td>2018-09-19 22:31:03</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>aeb1822464406c011c76cacc995c1537e37432f093e62de60fb9d27cba2ff176</td>
+                                            <td>3.12144493 </td>
+                                            <td>2018-09-19 21:14:49</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ce6507949d4e0281dcd1351a0d54658aaf16eb8d3348ae8e83848855c93609be</td>
+                                            <td>3.34842983 </td>
+                                            <td>2018-09-19 21:27:50</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>dbbc5e9d44bb8cb4f819647400146840999ccca20ef2a23f07c5b1bdb4c6b879</td>
+                                            <td>1.52954408</td>
+                                            <td>2018-09-19 21:37:20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>748421b7b6219aaea34e96222261038b8001465c6524d0514e6a381893a7f80e</td>
+                                            <td>1.39544321</td>
+                                            <td>2018-09-19 21:59:29</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ef49717ceda0b5ff35201e864d1fdf115bb0b40234843dec49c0a8359b379a3a</td>
+                                            <td>1.17016755</td>
+                                            <td>2018-09-19 22:31:03</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>aeb1822464406c011c76cacc995c1537e37432f093e62de60fb9d27cba2ff176</td>
+                                            <td>3.12144493 </td>
+                                            <td>2018-09-19 21:14:49</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ce6507949d4e0281dcd1351a0d54658aaf16eb8d3348ae8e83848855c93609be</td>
+                                            <td>3.34842983 </td>
+                                            <td>2018-09-19 21:27:50</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>dbbc5e9d44bb8cb4f819647400146840999ccca20ef2a23f07c5b1bdb4c6b879</td>
+                                            <td>1.52954408</td>
+                                            <td>2018-09-19 21:37:20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>748421b7b6219aaea34e96222261038b8001465c6524d0514e6a381893a7f80e</td>
+                                            <td>1.39544321</td>
+                                            <td>2018-09-19 21:59:29</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ef49717ceda0b5ff35201e864d1fdf115bb0b40234843dec49c0a8359b379a3a</td>
+                                            <td>1.17016755</td>
+                                            <td>2018-09-19 22:31:03</td>
+
+                                        </tr>
+
+                                </table>
+
+
+
+
+                                </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
+
+
+
+
+
                 </div>
-                <div class="chart ">
+                <div class="chart">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi cupiditate, ducimus sequi dolorem beatae neque, voluptate
                     consequuntur natus officiis pariatur, error sapiente quidem quia magni odit! Iusto veniam ullam numquam!
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi cupiditate, ducimus sequi dolorem beatae
@@ -183,10 +794,10 @@
             <p class="footer-column">
                 <span class="footer-colum__text">
                     <a href="https://telegram.org/" title="Telegram" class="social social-ds">
-                        <i class="fab fa-discord" title="Discrod"></i>
+                        <i class="fab fa-discord" title="Discord"></i>
                     </a>
                 </span>
-                <span class="footer-text">our Discrod</span>
+                <span class="footer-text">our Discord</span>
             </p>
 
 
@@ -197,4 +808,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+    <script src="js/tab.js"></script>
+    <script src="js/PagerJS.js"></script>
 </body>
