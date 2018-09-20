@@ -96,7 +96,7 @@
   border-bottom: 4px solid #e8e8e8;
   border-radius: 3px; }
 
-.tab-wrapper {
+.tab-container {
   border: 1px solid #e8e8e8; }
 
 body {
@@ -213,13 +213,6 @@ tr a:visited {
   text-decoration: none;
   color: #158cba; }
 
-.table-about {
-  font-size: 12px; }
-
-.table-about th,
-.table-about td {
-  padding: 12px 2px; }
-
 .col-rate {
   display: flex;
   flex-direction: column;
@@ -269,7 +262,6 @@ tr a:visited {
 .tab,
 .tab-2 {
   overflow: hidden;
-  border: 1px solid #ccc;
   background-color: #f1f1f1;
   display: flex;
   flex-direction: row; }
@@ -307,22 +299,12 @@ tr a:visited {
 .tabcontent,
 .tabcontent-2 {
   display: none;
-  padding: 10px 0;
   border-top: none; }
 
-.chart-container {
+.tab-container {
   width: 70%;
   margin: 0 auto;
-  margin-bottom: 25px;
-  padding: 10px; }
-  .chart-container__info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 20px; }
-
-.tab-wrapper {
-  width: 49%; }
+  margin-bottom: 25px; }
 
 .current {
   display: block; }
