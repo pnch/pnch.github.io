@@ -1,0 +1,16 @@
+google.charts.load("current", {packages:["corechart"]});
+google.charts.setOnLoadCallback(drawChart);
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+    ["Element", "coins", { role: "style" } ],
+          ["To payout", {{ minpay - balance }}, "#b87333"],
+  ]);
+  var view = new google.visualization.DataView(data);
+  var options = {
+    bar: {groupWidth: "75%"},
+    legend: { position: "top" },
+    hAxis : {maxValue: "{{ minpay  }}"},
+  };
+  var chart = new google.visualization.BarChart(document.getElementById("payoutsChart"));
+  chart.draw(view, options);
+}

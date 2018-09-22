@@ -16,6 +16,10 @@ body {
 .main-home {
   margin-top: 100px;
 }
+.main-about {
+  width: 70%;
+  margin: 0 auto;
+}
 .menu {
   display: flex;
   flex-direction: row;
@@ -95,7 +99,6 @@ li.dropdown {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid $color-grey-primary;
 }
 .table {
   border-collapse: collapse;
@@ -127,7 +130,13 @@ tr a:visited {
   text-decoration: none;
   color: #158cba;
 }
-
+.table-about {
+  border: 1px solid $color-grey-primary;
+  border-bottom: none;
+}
+.table-home {
+  border-bottom: none;
+}
 .table-about th,
 .table-about td {
   padding: 10px;
@@ -147,23 +156,6 @@ tr a:visited {
     &--2 {
     }
     &--3 {
-    }
-  }
-}
-.col-info {
-  margin-bottom: 25px;
-  &__row {
-    padding: 10px;
-    &:not(:last-child) {
-      margin-right: 5px;
-    }
-    &--1 {
-    }
-    &--2 {
-    }
-    &--3 {
-    }
-    &--4 {
     }
   }
 }
@@ -198,7 +190,7 @@ tr a:visited {
 .tab,
 .tab-2 {
   overflow: hidden;
-  border: 1px solid #ccc;
+  border: 1px solid $color-grey-primary;
   background-color: #f1f1f1;
   display: flex;
   flex-direction: row;
@@ -247,9 +239,9 @@ tr a:visited {
   padding: 10px;
 
   &__info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: inline-block;
+    // flex-direction: row;
+    // justify-content: space-around;
     margin-bottom: 20px;
   }
 }
@@ -266,7 +258,16 @@ tr a:visited {
 #current {
   background: #ccc;
 }
-.main-about {
-  width: 70%;
-  margin: 0 auto;
+// 4 cell
+.col-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5px;
+    min-width: 180px;
+  }
 }

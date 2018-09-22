@@ -1,0 +1,16 @@
+google.charts.load("current", { packages: ["annotatedtimeline"] });
+google.charts.setOnLoadCallback(drawHashrate);
+function drawHashrate() {
+  var data = new google.visualization.DataTable();
+  data.addColumn("date", "Date");
+  data.addColumn("number", "Hashrate");
+  data.addRows([]);
+  var chart = new google.visualization.AnnotationChart(
+    document.getElementById("hashrateChart")
+  );
+  chart.draw(data, {
+    displayAnnotations: true,
+    displayExactValues: true,
+    dateFormat: "HH:mm MMMM dd, yyyy"
+  });
+}

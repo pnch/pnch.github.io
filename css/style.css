@@ -84,10 +84,11 @@
     z-index: -1; } }
 
 .table-container,
+.table-home,
 .chart-container,
 .setting,
 .col-rate__col,
-.col-info__row,
+.col-info__text,
 .chart-container__info-workers,
 .chart-container__info-payments {
   border-left: 2px solid #e8e8e8;
@@ -95,9 +96,6 @@
   border-top: 1px solid #e8e8e8;
   border-bottom: 4px solid #e8e8e8;
   border-radius: 3px; }
-
-.tab-container {
-  border: 1px solid #e8e8e8; }
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -115,6 +113,10 @@ body {
 
 .main-home {
   margin-top: 100px; }
+
+.main-about {
+  width: 70%;
+  margin: 0 auto; }
 
 .menu {
   display: flex;
@@ -184,8 +186,7 @@ li.dropdown {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  border: 1px solid #e8e8e8; }
+  justify-content: space-between; }
 
 .table {
   border-collapse: collapse;
@@ -215,6 +216,13 @@ tr a:visited {
   text-decoration: none;
   color: #158cba; }
 
+.table-about {
+  border: 1px solid #e8e8e8;
+  border-bottom: none; }
+
+.table-home {
+  border-bottom: none; }
+
 .table-about th,
 .table-about td {
   padding: 10px; }
@@ -227,13 +235,6 @@ tr a:visited {
   .col-rate__col {
     padding: 10px;
     margin-bottom: 25px; }
-
-.col-info {
-  margin-bottom: 25px; }
-  .col-info__row {
-    padding: 10px; }
-    .col-info__row:not(:last-child) {
-      margin-right: 5px; }
 
 .setting {
   margin-bottom: 25px;
@@ -261,7 +262,7 @@ tr a:visited {
 .tab,
 .tab-2 {
   overflow: hidden;
-  border: 1px solid #ccc;
+  border: 1px solid #e8e8e8;
   background-color: #f1f1f1;
   display: flex;
   flex-direction: row; }
@@ -307,9 +308,7 @@ tr a:visited {
   margin-bottom: 25px;
   padding: 10px; }
   .chart-container__info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: inline-block;
     margin-bottom: 20px; }
 
 .tab-container {
@@ -325,6 +324,13 @@ tr a:visited {
 #current {
   background: #ccc; }
 
-.main-about {
-  width: 70%;
-  margin: 0 auto; }
+.col-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; }
+  .col-info__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5px;
+    min-width: 180px; }
