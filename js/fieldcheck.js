@@ -14,7 +14,7 @@ $(document).ready(function(){
                 405: function() {
                     alert( "Settings update failed for $address " );
                 },
-                405: function() {
+                404: function() {
                     alert( "Settings update failed for " + $address );
                 },
                 200: function() {
