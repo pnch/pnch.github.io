@@ -12,7 +12,7 @@ $(document).ready(function(){
             contentType: "application/json;charset=utf-8",
             statusCode: {
                 405: function() {
-                    alert( "Settings update failed for " + $address );
+                    alert( "Settings update failed for $address " );
                 },
                 405: function() {
                     alert( "Settings update failed for " + $address );
