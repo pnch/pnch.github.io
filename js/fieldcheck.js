@@ -9,7 +9,18 @@ $(document).ready(function(){
             url: "/settings/setmin",
             data: {min: number, addr: address},
             dataType: "html",
-            contentType: "application/json;charset=utf-8", 
+            contentType: "application/json;charset=utf-8",
+            statusCode: {
+                405: function() {
+                    alert( "Settings update failed for " + $address );
+                },
+                405: function() {
+                    alert( "Settings update failed for " + $address );
+                },
+                200: function() {
+                    console.log("-1-1-1-1 WE GOT 200!");
+                }
+            }, 
             success: function(){
                 alert("success!");
             },
