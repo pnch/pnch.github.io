@@ -32,10 +32,10 @@ $(document).ready(function(){
                 console.log('Failure 2!');
                 console.log(response.status);
         
-                if (response.status === 404) {
-                    console.log('response.error');
+                if (response.status === 404 || response.status === 405) {
+                    console.log('Settings update failed for ' + address);
                 } else {
-                    // This would mean an invalid response from the server - maybe the site went down or whatever...
+                   // This would mean an invalid response from the server - maybe the site went down or whatever...
                 }
             }
         });
