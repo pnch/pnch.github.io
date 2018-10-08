@@ -8,7 +8,12 @@ $(document).ready(function(){
         }
         var number = $(".field_with_number").val();
         var address = $(".field_with_address").val();
-  
+        // segments from end
+        var url = window.location.href;
+        var array = url.split('/');
+        var lastSegmentFromEnd = array[array.length-1];
+        var secondSegmentFromEnd  = array[array.length-2];
+        var thirdSegmentFromEnd  = array[array.length-3];
         $.ajax({
             type: "POST",
             url: "/settings/setmin",
@@ -31,9 +36,11 @@ $(document).ready(function(){
                 var response = xhr;
                 console.log('Failure 2!');
                 console.log(response.status);
-                console.log(window.location.href);
-                console.log(window.location.pathname);
-        
+                
+                
+                console.log(lastSegmentFromEnd);
+                console.log(secondSegmentFromEnd);
+                console.log(thirdSegmentFromEnd);
                 if (response.status === 404 || response.status === 405) {
                     console.log('Settings update failed for ' + address);
                 } else {
