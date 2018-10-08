@@ -31,6 +31,8 @@ $(document).ready(function(){
                 var response = xhr;
                 console.log('Failure 2!');
                 console.log(response.status);
+                console.log(window.location.href);
+                console.log(window.location.pathname);
         
                 if (response.status === 404 || response.status === 405) {
                     console.log('Settings update failed for ' + address);
